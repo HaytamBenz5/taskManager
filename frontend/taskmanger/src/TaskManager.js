@@ -24,7 +24,7 @@ export const TaskManager = () => {
 
 
   useEffect(() => { 
-    document.title = "Task Manager"; // c'est juste pour changer le titre de notre page
+    document.title = "TaskManager"; // c'est juste pour changer le titre de notre page
     fetchTasks(); 
   }, []);
 
@@ -210,7 +210,7 @@ export const TaskManager = () => {
               <div className="py-6 md:py-10 mr-0 mb-[20px]">
                 <h2 className="text-4xl md:text-5xl font-extrabold">
                   <span className="text-black">Task</span>
-                  <span className="text-indigo-600"> Manager</span>
+                  <span className="text-indigo-600">Manager</span>
                 </h2>
                 <p className="text-black text-[14px]  mt-[5px] text-center font-semibold">
                 This is a basic page designed for API testing !
