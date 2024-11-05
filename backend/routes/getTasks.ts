@@ -1,8 +1,9 @@
 import { IncomingMessage, ServerResponse } from "http";
-import taskManager from "../data/tasks"; // Importation du gestionnaire de tâches, supposant qu'il s'agit aussi d'un fichier TypeScript
-import sendResponse from "../utilities/Utilities"; // Importation de la fonction utilitaire pour envoyer des réponses, pas besoin de l'extension .ts
+import taskManager from "../data/tasks"; 
+import sendResponse from "../utilities/Utilities";
 
-// Fonction pour récupérer toutes les tâches
+// ############################### Pour récupérer toutes les tâches  ###############################
+
 function getTasks(req: IncomingMessage, res: ServerResponse): void {
     // Récupère toutes les tâches à partir du gestionnaire de tâches
     const tasks = taskManager.getAllTasks();

@@ -25,8 +25,9 @@ class TaskManager {
         return newTask;
     }
 }
+// j'instancie un objet de la classe TaskManager
 const taskManager = new TaskManager();
-// Quelques tests
+// j'ajoute quelques tests
 taskManager.addTask('Learn TypeScript');
 taskManager.addTask('Build a project');
 taskManager.addTask('Review code');

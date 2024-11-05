@@ -1,6 +1,8 @@
 import { IncomingMessage, ServerResponse } from "http";
-import taskManager from "../data/tasks"; // Ajustez le chemin d'importation si nécessaire
-import sendResponse from "../utilities/Utilities"; // Ajustez le chemin d'importation si nécessaire
+import taskManager from "../data/tasks"; 
+import sendResponse from "../utilities/Utilities"; 
+
+// ############################### Pour inserer une nouvelle tache  ###############################
 
 function postTask(req: IncomingMessage, res: ServerResponse): void {
     let body: Buffer[] = [];

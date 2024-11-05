@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const tasks_1 = __importDefault(require("../data/tasks")); // Ajustez le chemin d'importation si nécessaire
-const Utilities_1 = __importDefault(require("../utilities/Utilities")); // Ajustez le chemin d'importation si nécessaire
+const tasks_1 = __importDefault(require("../data/tasks"));
+const Utilities_1 = __importDefault(require("../utilities/Utilities"));
+// ############################### Pour inserer une nouvelle tache  ###############################
 function postTask(req, res) {
     let body = [];
     // Collecte les données du corps de la requête

@@ -1,12 +1,13 @@
 // Implement tasks here
 
+// modele de tache
 export interface Task {
   id: number;
   title: string;
 }
 
-class TaskManager {
 
+class TaskManager {
 
   private tasks: Task[] = []; // C'est un tableau de taches 
   private nextId = 1; // c'est un identifiant pour la prochaine tache qui va etre créer
@@ -37,9 +38,11 @@ class TaskManager {
 }
 
 
+// j'instancie un objet de la classe TaskManager
+
 const taskManager = new TaskManager();
 
-// Quelques tests
+// j'ajoute quelques tests
 taskManager.addTask('Learn TypeScript');
 taskManager.addTask('Build a project');
 taskManager.addTask('Review code');
